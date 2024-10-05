@@ -42,3 +42,31 @@ document.getElementById('jobs').addEventListener('click', function() {
   });
   this.classList.add('active');
 });
+
+    function moveToNext(current, nextId) {
+      if (current.value.length === 1) {
+        document.getElementById(nextId).focus();
+      }
+      checkInputs();
+    }
+
+
+    function checkInputs() {
+      const inputs = document.querySelectorAll('.otp-input');
+      const verifyBtn = document.getElementById('verify-btn');
+      let allFilled = true;
+
+      inputs.forEach(input => {
+        if (input.value === '') {
+          allFilled = false;
+        }
+      });
+
+      if (allFilled) {
+        verifyBtn.removeAttribute('disabled');
+        verifyBtn.classList.add('enabled');
+      } else {
+        verifyBtn.setAttribute('disabled', true);
+        verifyBtn.classList.remove('enabled');
+      }
+    }

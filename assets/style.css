@@ -322,6 +322,9 @@ section{
     }
 }
 @media only screen and (min-width:300px) and (max-width:730px){
+    .section-5 .col-lg-7{
+        margin-bottom: 23px;
+    }
     .register-page .input-parent {
         width: 100% !important;
         padding: 0px 10px !important;
@@ -763,3 +766,43 @@ text-transform: capitalize;
     padding-top: 150px;
     margin-bottom: 50px;
 }
+.otp-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .otp-input {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-family:var(--font);
+    outline: none;
+  }
+  .otp-input:focus{
+    border: 2px solid var(--primary);
+  }
+  .otp-input:last-child {
+    margin-right: 0;
+  }
+  #verify-btn {
+    font-size: 14px;
+    font-family: var(--font);
+    
+    color: #fff;
+    background-color: var(--grey);
+    border: none;
+    outline: none;
+    padding: 0px 22px;
+    height: 40px;
+    border-radius: 12px;
+    cursor: not-allowed;
+  }
+  #verify-btn.enabled {
+    cursor: pointer;
+    background-color: var(--primary);
+    transition: all .15s ease-in-out;
+  }

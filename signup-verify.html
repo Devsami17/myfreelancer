@@ -142,31 +142,22 @@
                    </header>
      <main class="register-page">
 <h1 class="text-center">
-Log in to MyFreelancer
+    Complete your email verification
 </h1>
-<div class="container">
-    <div class="input-parent">
-        <form>
+<div class="container gap-4 flex-column">
+<p class="text-center mb-0">Please enter the 6-digit code sent to your email</p>
+<div class="otp-container">
+    <input type="text" maxlength="1" class="otp-input" id="otp-1" oninput="moveToNext(this, 'otp-2')">
+    <input type="text" maxlength="1" class="otp-input" id="otp-2" oninput="moveToNext(this, 'otp-3')">
+    <input type="text" maxlength="1" class="otp-input" id="otp-3" oninput="moveToNext(this, 'otp-4')">
+    <input type="text" maxlength="1" class="otp-input" id="otp-4" oninput="moveToNext(this, 'otp-5')">
+    <input type="text" maxlength="1" class="otp-input" id="otp-5" oninput="moveToNext(this, 'otp-6')">
+    <input type="text" maxlength="1" class="otp-input" id="otp-6" oninput="checkInputs()">
+  </div>
+  <button id="verify-btn" disabled>Verify &nbsp; <i class="fa-solid fa-check"></i></button>                    
 
-
-    <div class="input-group">
-<label>Username or Email</label>
-<input type="text" placeholder="@example_account" required>
-    </div>
-    <div class="input-group">
-        <label>Password</label>
-        <input  type="text" required>
-            </div>
-
-                            <div class="d-flex justify-content-center mt-4">
-                                <button type="submit">Continue to my account</button>
-                            </div>
-                        </form>
-                            <div class="d-flex justify-content-center mt-3">
-                             <p>Dont have an account?<a href="register.html"> Register now</a></p>
-                            </div>
-                        </div>
-                     
+<p class="mb-0">Having an issue? <a href="signup-verify.html">Click to resend OTP</a></p>
+<p class="text-center">Click here if you want to cancel the registration process? <a href="index.html">Abort</a></p>
 </div>
 
      </main>
