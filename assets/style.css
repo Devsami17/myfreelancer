@@ -327,6 +327,13 @@ section{
     }
 }
 @media only screen and (min-width:320px) and (max-width:550px){
+    .section-10 .gigs-pagination ul li{
+        margin-left: 15px !important;
+    }
+    .section-10 .filter-parent-one div:nth-child(1) select {
+        font-size: 13px !important;
+        padding: 0 6px !important;
+    }
     .section-10 .gigs-area .single-gig-box{
         width: 90% !important;
     }
@@ -337,6 +344,7 @@ section{
     .section-10 .filter-parent-one div:nth-child(1)
     {
         overflow: auto !important;
+        margin-bottom: 18px !important;
     }
     .section-10 .gigs-area{
         justify-content: center !important;
@@ -961,6 +969,7 @@ font-weight: 700;
 .section-10 .filter-parent-one div:nth-child(1) select{
     padding: 0px 20px;
     border-radius: 8px;
+    background-color: #fff;
     font-size:16px ;
     border: 1px solid var(--grey);
     font-family: var(--font);
@@ -992,6 +1001,7 @@ font-weight: 700;
     font-family: var(--font);
     font-weight: 700;
     text-transform: none;
+    background-color: #fff;
 width: 115px;
 
 }
@@ -1099,7 +1109,7 @@ font-size: 16px;
 .section-10 .gigs-pagination ul{
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+  
 }
 .section-10 .gigs-pagination ul li{
     list-style-type: none;
@@ -1107,6 +1117,7 @@ font-size: 16px;
     cursor: pointer;
     font-family: var(--font);
     color: var(--grey2);
+    margin-left: 25px;
 }
 .section-10 .gigs-pagination ul li.active{
     color: #000;
