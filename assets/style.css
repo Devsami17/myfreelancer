@@ -7,6 +7,7 @@
 --border2:#f9f9f9;
 --grey:#d9d9d9;
 --grey2:#95979d;
+--border-3:#dadbdd;
 
 }
 body{
@@ -176,7 +177,7 @@ font-size: 14px;
 font-weight: 500;
 cursor: pointer;
 }
-.header-1 .col-lg-5 .account-options button , .section-1 button , .section-5 button, .register-page button{
+.header-1 .col-lg-5 .account-options button , .section-1 button , .section-5 button, .register-page button, .section-11 .Continue-to-chat{
     font-size: 14px;
     font-family: var(--font);
     
@@ -311,7 +312,7 @@ section{
 }
 } 
 @media  only screen  and (min-width:760px) and (max-width:1000px) {
-    .section-10 .gigs-area .single-gig-box{
+    .gigs-area .single-gig-box{
         width: 32% !important;
     }
     .section-8 .single-category-box{
@@ -327,31 +328,52 @@ section{
     }
 }
 @media only screen and (min-width:320px) and (max-width:550px){
-   .section-10 .gigs-pagination ul{
+    .section-11 h4{
+        font-size: 25px !important;
+    }
+    .section-11 button.prev {
+        left: 0px !important;
+        
+    }
+    .section-11 button.next {
+        right: 0px !important;
+
+
+    }
+    .section-11 .slides img {
+        height: 250px !important;
+    }
+    .section-11 .about-freelancer {
+        padding: 15px 15px !important;
+    }
+    .Continue-to-chat{
+        padding-bottom: 20px;
+    }
+  .gigs-pagination ul{
     padding-left: 0px !important;
     justify-content: space-between !important;
    }
-   .section-10 .gigs-pagination ul li{
+  .gigs-pagination ul li{
     margin-left: 0px !important;
    }
   
-    .section-10 .filter-parent-one div:nth-child(1) select {
+   .filter-parent-one div:nth-child(1) select {
         font-size: 13px !important;
         padding: 0 6px !important;
     }
-    .section-10 .gigs-area .single-gig-box{
+   .gigs-area .single-gig-box{
         width: 90% !important;
     }
-    .section-10 .gigs-area .single-gig-box .image-area img{
+   .gigs-area .single-gig-box .image-area img{
         height: 200px !important;
         
     }
-    .section-10 .filter-parent-one div:nth-child(1)
+   .filter-parent-one div:nth-child(1)
     {
         overflow: auto !important;
         margin-bottom: 18px !important;
     }
-    .section-10 .gigs-area{
+   .gigs-area{
         justify-content: center !important;
     }
     .section-8 .single-category-box{
@@ -370,16 +392,25 @@ section{
 }
 @media only screen and (min-width:560px) and (max-width:730px)
 {
-    .section-10 .filter-parent-one div:nth-child(1) select{
+   .filter-parent-one div:nth-child(1) select{
     padding: 0px 5px !important;
     font-size: 14px !important;
     }
-    .section-10 .gigs-area .single-gig-box{
+ .gigs-area .single-gig-box{
         width: 49% !important;
     }
     .section-8 .single-category-box{
         width: 48% !important;
         margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:930px){
+    .section-11 .sidebar-packages{
+        position: static !important;
+        width: 100% !important;
+        margin-top: 30px;
+        height: 320px !important;
+        padding-bottom: 50px;
     }
 }
 @media only screen and (min-width:1200px){
@@ -388,6 +419,16 @@ section{
     }
     .section-8 .single-category-box img{
         height: 170px !important    ;
+    }
+}
+@media only screen and (min-width:1800px){
+    .section-11 .slides img {
+        height: 450px !important;
+    }
+    .section-11 .sidebar-packages {
+        right:15%  !important;
+width: 23% !important;
+height: 320px !important;
     }
 }
 @media only screen and (min-width:300px) and (max-width:730px){
@@ -1024,56 +1065,57 @@ width: 115px;
     font-family: var(--font);
     margin-top: 20px;
 }
-.section-10 .gigs-area{
+.gigs-area{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.section-10 .gigs-area .single-gig-box .image-area img{
+ .gigs-area .single-gig-box .image-area img{
 border-radius: 8px;
 height: 160px;
 width: 100%;
 }
-.section-10 .gigs-area .single-gig-box{
+.gigs-area .single-gig-box{
     width: 23%;
     margin-bottom: 10px;
   cursor: pointer;
 }
-.section-10 .gigs-area .single-gig-box .image-area .heart-icon-area{
+ .gigs-area .single-gig-box .image-area .heart-icon-area{
     position: absolute;
     right: 16px;
     top: 16px;
 }
-.section-10 .gigs-area .single-gig-box .image-area .heart-icon-area .heart-icon{
+ .gigs-area .single-gig-box .image-area .heart-icon-area .heart-icon{
     background: url('https://fiverr-res.cloudinary.com/npm-assets/@fiverr/search_perseus/hearts.e6208a0.svg');
     height: 32px;
     width: 34px;
     background-position:0 0 ;
     cursor: pointer;
 }
-.section-10 .gigs-area .single-gig-box .image-area .heart-icon-area .heart-icon:hover{
+.gigs-area .single-gig-box .image-area .heart-icon-area .heart-icon:hover{
 background-position: right;
 
 }
 
-.section-10 .gigs-area .single-gig-box  .gig-userinfo{
+.gigs-area .single-gig-box  .gig-userinfo{
     margin-top: 10px;
 }
-.section-10 .gigs-area .single-gig-box  .gig-userinfo div:nth-child(1){
+.gigs-area .single-gig-box  .gig-userinfo div:nth-child(1){
 display: flex;
 justify-content: normal;
 align-items: center;
 gap: 8px;
 }
-.section-10 .gigs-area .single-gig-box  .gig-userinfo div:nth-child(1) img{
+.gigs-area .single-gig-box  .gig-userinfo div:nth-child(1) img{
     height: 22px;
+    border-radius: 50%;
     width: 22px;
 }
-.section-10 .gigs-area .single-gig-box  .gig-userinfo p{
+.gigs-area .single-gig-box  .gig-userinfo p{
     font-size: 14px 
     ;margin-bottom: 0px;
 }
-.section-10 .gigs-area .single-gig-box  .gig-title h6{
+.gigs-area .single-gig-box  .gig-title h6{
     font-family: var(--font);
     font-size:16px;
     color: #000;
@@ -1081,32 +1123,32 @@ gap: 8px;
   
    
 }
-.section-10 .gigs-area .single-gig-box  .gig-title h6:hover{
+.gigs-area .single-gig-box  .gig-title h6:hover{
     text-decoration:underline ;
     cursor: pointer;
 }
-.section-10 .gigs-area .single-gig-box .gig-rating p{
+.gigs-area .single-gig-box .gig-rating p {
 margin-bottom: 0px;
 color: #666;
 font-size: 16px;
 }
-.section-10 .gigs-area .single-gig-box .gig-rating span{
+.gigs-area .single-gig-box .gig-rating span{
     font-weight: 700;
 }
-.section-10 .gigs-area .single-gig-box .gig-rating  svg{
+.gigs-area .single-gig-box .gig-rating  svg{
     height: 14px;
     width: 14px;
 }
-.section-10 .gigs-area .single-gig-box .gig-price p {
+.gigs-area .single-gig-box .gig-price p {
     font-family: var(--font2) ;
     font-weight: 700;
     margin-top: 8px;
 }
-.section-10 .gigs-area .single-gig-box .gig-price p  span{
+.gigs-area .single-gig-box .gig-price p  span{
     font-family: var(--font) ;
     font-weight: 700;
 }
-.section-10 .gigs-pagination {
+.gigs-pagination {
     display: flex   ;
     margin-top: 25px;
     justify-content: center;
@@ -1136,4 +1178,240 @@ font-weight: 600;
     border: 1px solid var(--border1);
     border-radius: 50%;
     padding: 10px;
+}
+.section-11 .breadcrumb-item {
+    font-family: var(--font2) !important; 
+    font-weight: 600;
+    color:#666 ;
+    font-size: 14px ;
+}
+.section-11 .breadcrumb-item a{
+    text-decoration: none ;
+    color: #000;
+
+}
+.section-11 .breadcrumb-item a:hover{
+    text-decoration: underline;
+
+}
+.section-11 h4{
+    font-family: var(--font2);
+    font-size: 28px;
+
+    font-weight: 600;
+}
+.section-11  .user-info img , .section-11 .about-freelancer img {
+height: 50px;
+width: 50px;
+border: 1px solid var(--grey);
+border-radius: 50%;
+}
+.section-11  .user-info .title{
+    font-size: 18px;
+    font-family: var(--font2);
+    font-weight: 700;
+    margin-left: 8px;
+}
+.section-11  .user-info .level-info{
+    font-family: var(--font);
+    border-left: 2px solid var(--border1);
+    padding-left: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.section-11  .slider-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.section-11  .slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-11  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.section-11  .slides  img {
+    height: 350px;
+    width: 100%;
+    border-radius: 8px;
+  
+}
+
+.section-11  .slide {
+    min-width: 100%;
+    transition: opacity 0.5s;
+}
+
+.section-11  .next , .section-11 .prev {
+    background-color: var(--secondary);
+
+    border-radius: 50%;
+    color: var(--grey2);
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid var(--border1);
+}
+
+.section-11  button.prev {
+    left: -25px;
+}
+
+.section-11  button.next {
+    right: -25px;
+}
+
+
+.section-11  .indicators {
+    text-align: center;
+    margin-top: 15px;
+}
+.section-11  .dot {
+    height: 8px;
+    width:8px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+.section-11 .review-stars , .user-reviews p{
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 14px;
+}
+.section-11 .orders-inqueue , .user-reviews span{
+font-size: 14px;
+font-family: var(--font);
+color: var(--grey2);
+}
+.section-11 h3{
+    font-family: var(--font2);
+    font-size: 18px;
+    font-weight: 500;
+  
+}
+.section-11 .col-lg-7 div p{
+    font-family: var(--font);
+    color: #000000c7;
+    font-size: 15px;
+}
+.section-11 .col-lg-7 div  strong{
+    font-family: var(--font);
+    color: #000000c7;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.section-11 .about-freelancer{
+  border: 1px solid var(--grey);
+  border-radius: 6px;
+    padding: 15px 30px;
+}
+.section-11 .about-freelancer h3 , .user-reviews h3{
+    font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+    font-family: var(--font2);
+}
+.section-11 .about-freelancer .user-detail{
+    text-transform:capitalize ;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.section-11 progress{
+    height: 25px;
+width: 100%;
+}
+.section-11 .single-review-box{
+    border: 2px solid var(--border1);
+    padding: 10px 30px;
+    border-radius: 4px;
+}
+.section-11 .single-review-box img{
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--border1);
+    width: 30px;
+}
+.section-11 .single-review-box div .user-name{
+    font-size: 18px;
+    
+}
+.section-11 .single-review-box .country img{
+    height: 15px;
+    width: 15px;
+    border-radius: 0px;
+    border: none;
+}
+.section-11 .single-review-box .country p {
+font-size: 12px;
+color: var(--grey2);
+}
+.section-11 .sidebar-packages{
+    width: 30%;
+    height: 330px;
+    border:1px solid var(--border-3) ;
+    z-index: 100;
+    position: fixed;
+    background-color:#fff;
+    border-radius: 4px;
+    top: 24%;
+    right: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.section-11 .sidebar-packages .packages-option button{
+    width: 33.3333%;
+    border: none;
+    outline: none;
+    background-color: #fafafa;
+    padding: 16px;
+    font-size: 15px;
+    font-family: var(--font);
+    border-left: 1px solid var(--border-3);
+    border-bottom: 1px solid var(--border-3);
+
+}
+.section-11 .sidebar-packages .packages-option button.active{
+background-color: #fff;
+font-weight: 600;
+border-bottom: 2px solid #000;
+
+}
+.section-11 .sidebar-packages  .package-title p{
+    font-size: 16px;
+    font-family: var(--font2);
+    color: #000;
+    font-weight: 700;
+}
+.section-11 .sidebar-packages  .package-title span{
+    font-size: 16px;
+    font-family: var(--font);
+    color: #000;
+    font-weight: 700;
+}
+.section-11 .sidebar-packages .features{
+    font-size: 14px;
 }
