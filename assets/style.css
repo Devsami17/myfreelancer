@@ -327,9 +327,14 @@ section{
     }
 }
 @media only screen and (min-width:320px) and (max-width:550px){
-    .section-10 .gigs-pagination ul li{
-        margin-left: 15px !important;
-    }
+   .section-10 .gigs-pagination ul{
+    padding-left: 0px !important;
+    justify-content: space-between !important;
+   }
+   .section-10 .gigs-pagination ul li{
+    margin-left: 0px !important;
+   }
+  
     .section-10 .filter-parent-one div:nth-child(1) select {
         font-size: 13px !important;
         padding: 0 6px !important;
@@ -1108,7 +1113,9 @@ font-size: 16px;
 }
 .section-10 .gigs-pagination ul{
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
+    width: 100%;
+    padding: 0px ;
   
 }
 .section-10 .gigs-pagination ul li{
